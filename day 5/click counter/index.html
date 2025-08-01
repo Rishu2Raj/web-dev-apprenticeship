@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Click Counter</title>
+  <style>
+    body {
+      text-align: center;
+      margin-top: 100px;
+      font-family: sans-serif;
+    }
+    button {
+      padding: 15px 25px;
+      font-size: 18px;
+    }
+    #count {
+      font-size: 36px;
+      margin-top: 20px;
+      color: #1E88E5;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Click Counter</h1>
+  <button onclick="increment()">Click Me</button>
+  <div id="count">0</div>
+
+  <script>
+    let count = 0;
+    function increment() {
+      count ++;
+      document.getElementById('count').textContent = count;
+    }
+  </script>
+</body>
+</html>
